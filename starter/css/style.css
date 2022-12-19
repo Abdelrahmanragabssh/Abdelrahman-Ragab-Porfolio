@@ -1,4 +1,12 @@
+:root {
+  --headercolor: #0095f9;
+  --hovercolor: rgb(255, 0, 0);
+  --textcolor: #000000;
+}
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -9,8 +17,41 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  color: white;
+  min-height: 150px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 450px;
+}
+
+nav a {
+  background-color: unset;
+  color: var(--textcolor);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav a:hover {
+  color: var(--hovercolor);
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2{
+  margin: 2% 0;
+  font-size: 250%;
+}
 h3,
 h4,
 h5,
@@ -20,4 +61,175 @@ h6 {
 
 p {
   margin: 0;
+}
+
+#about {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "featuredProduct featuredProduct";
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url("../images/1.jpeg");
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid #FF6200;
+  position: absolute;
+  right: 150px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 140px;
+  margin: 30px auto;
+  font-size: larger;
+}
+
+#subHeading h2 {
+  width: 25%;
+  font-weight: 500;
+  font-size:medium ;
+}
+
+#work {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "surfreport surfreport surfreport"
+  "ledwall calculator calculator"
+  "pastel runbuddy runbuddy"
+  ;
+}
+
+#surfreport {
+  grid-area: surfreport;
+  background-image: url("../images/02-portfolio-4.jpg");
+
+}
+#ledwall {
+  grid-area: ledwall;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#pastel {
+  grid-area: pastel;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#runbuddy {
+  grid-area: runbuddy;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+.categoryGridArea p{
+  font-size:medium;
+  font-weight:normal;
+}
+.categoryGridArea:hover{
+  opacity: 0.65;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 100px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#contact ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 700px;
+}
+
+#contact a {
+  background-color: unset;
+  color: var(--textcolor);
+  font-weight: bold;
+  text-decoration: none;
+  font-size:larger;
+}
+
+#contact a:hover {
+  color: var(--hovercolor);
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#contact h2 {
+  width: 25%;
+  font-weight: 500;
+}
+#contactme {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#contactme a {
+  cursor: pointer;
+  text-decoration: none;
 }

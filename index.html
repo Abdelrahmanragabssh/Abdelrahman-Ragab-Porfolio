@@ -5,39 +5,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Abdelrahman Ragab // Web Developer</title>
+  <link rel="stylesheet" href="starter/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
-  </header>
+  <nav id="navBar">
+    <h1>Abdelrahman Ragab // Web Developer</h1>
+    <div id="navigation">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <div id="pp"><img src="/Abdelrahman-Ragab-Porfolio/starter/images/267283188_1177833946080051_7044652320738823424_n copy-modified.png" alt="HTML5 Icon" width="128" height="128" style="float:inline-start;">
+      </div>
+    </div>
+  </nav>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
+  <!-- <section class="hero-banner">
+    <div id="subtitle">
       <h2>Cool subtitle here!</h2>
     </div>
-  </section>
+  </section> -->
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+    <section id="about">
+      <div id="featuredProduct" class="heroGridArea">
+        <div id="headline">
+          <h2>About Me</h2>
+          <p>Front-End Web Developer based in the UK. I love combining the worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.</p>
+        </div>
+      </div>
+      <div id="secondaryProduct" class="heroGridArea"></div>
+    </section>
+    <div class="subHeading">
       <h2>Work</h2>
+    </div>
+    <section id="work">
+      <div id="surfreport" class="categoryGridArea">
+        <div class="heading">Surf Report <p>MERN Stack</p> </div>
+      </div>
+      <div id="ledwall" class="categoryGridArea">
+        <div class="heading">Led Wall<p>Node/ioT</p></div>
+      </div>
+      <div id="calculator" class="categoryGridArea">
+        <div class="heading">Calculator<p>React/Javascript/CSS</p></div>
+      </div>
+      <div id="pastel" class="categoryGridArea">
+        <div class="heading">Pastel Puzzels<p>MERN Stack</p></div>
+      </div>
+      <div id="runbuddy" class="categoryGridArea">
+        <div class="heading">Run Buddy<p>HTML/CSS</p></div>
+      </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section id="contact">
       <h2>Contact Me</h2>
+      <div id="contactme">
+        <ul>
+          <li><a href="#">+44789349259</a></li>
+          <li><a href="#">abdelrahmanragab412@gmail.com</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
     </section>
   </main>
 </body>
